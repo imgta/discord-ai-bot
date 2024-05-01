@@ -1,5 +1,6 @@
 {
 	"name": "markov_ai",
+	"main": "dist/bot.js",
 	"scripts": {
 		"dev": "tsx watch src/bot.ts",
 		"build": "tsc",
