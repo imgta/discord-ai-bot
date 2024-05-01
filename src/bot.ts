@@ -24,7 +24,7 @@ const serverChannels = [
 const openai = new OpenAI({ apiKey: process.env.OPENAI_KEY as string });
 
 // TRACK BOT'S ONLINE STATUS
-client.on("ready", () => { console.log("Markov.ai online."); });
+client.on("ready", () => { return console.log("Markov.ai online."); });
 
 // EVENT LISTENER FOR AI PROMPTS IN MESSAGES
 client.on("messageCreate", async (message: Message) => {
